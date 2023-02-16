@@ -1,0 +1,42 @@
+.game {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:98vh;
+}
+
+.board {
+    display: flex;
+    max-width:800px;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    flex: 0 32%;
+}
+
+.square:nth-child(-n+3) {
+    border-bottom: 1px solid black;
+}
+
+.square:nth-child(n+7) {
+    border-top: 1px solid black;
+}
+
+.square:nth-child(3n+1) {
+    border-right: 1px solid black;
+}
+
+.square:nth-child(3n) {
+    border-left: 1px solid black;
+}
+
+.info {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 190px;
+    margin-bottom: -200px;
+}
